@@ -14,6 +14,20 @@
                         <label for="content">Content</label>
                         <textarea class="form-control" id="content" v-model="post.content" cols="30" rows="10"></textarea>
                     </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="publish-immediately" v-model="post.publishImmediately">
+                        <label for="publish-immediately">Publish immediately</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Share on</label>
+
+                        <div v-for="media in formData.socialMedia">
+                            <input type="checkbox" :id="media" :value="media" v-model="post.shareOn">
+                            <label :for="media">{{ media }}</label>
+                        </div>
+                    </div>
                 </form>
 
                 <hr>
