@@ -5,7 +5,15 @@
                 <h1>Add Blog Post</h1>
 
                 <form>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title" v-model="post.title">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea class="form-control" id="content" v-model="post.content" cols="30" rows="10"></textarea>
+                    </div>
                 </form>
 
                 <hr>
