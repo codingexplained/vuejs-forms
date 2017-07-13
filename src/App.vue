@@ -7,12 +7,12 @@
                 <form>
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" v-model="post.title">
+                        <input type="text" class="form-control" id="title" v-model.trim="post.title">
                     </div>
 
                     <div class="form-group">
                         <label for="content">Content</label>
-                        <textarea class="form-control" id="content" v-model="post.content" cols="30" rows="10"></textarea>
+                        <textarea class="form-control" id="content" v-model.lazy.trim="post.content" cols="30" rows="10"></textarea>
                     </div>
 
                     <div class="form-group">
