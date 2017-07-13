@@ -42,6 +42,7 @@
                         <label for="select-series">Series</label>
 
                         <select class="form-control" id="select-series" v-model="post.series">
+                            <option value="">Choose Series</option>
                             <option v-for="series in formData.series" :value="series">{{ series }}</option>
                         </select>
                     </div>
@@ -99,10 +100,10 @@
                 post: {
                     title: '',
                     content: '',
-                    publishImmediately: false,
-                    shareOn: [],
-                    category: '',
-                    series: ''
+                    publishImmediately: true,
+                    shareOn: ['Facebook'],
+                    category: 'Backend',
+                    series: 'Complete Guide to Elasticsearch'
                 },
                 formData: {
                     socialMedia: ['Facebook', 'Twitter'],
