@@ -28,6 +28,15 @@
                             <label :for="media">{{ media }}</label>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label>Category</label>
+
+                        <div v-for="category in formData.categories">
+                            <input type="radio" :id="category" :value="category" v-model="post.category">
+                            <label :for="category">{{ category }}</label>
+                        </div>
+                    </div>
                 </form>
 
                 <hr>
