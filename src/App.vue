@@ -37,6 +37,14 @@
                             <label :for="category">{{ category }}</label>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label for="select-series">Series</label>
+
+                        <select class="form-control" id="select-series" v-model="post.series">
+                            <option v-for="series in formData.series" :value="series">{{ series }}</option>
+                        </select>
+                    </div>
                 </form>
 
                 <hr>
