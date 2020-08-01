@@ -1,6 +1,6 @@
 # Working with Vue.js Forms
 
-This repository contains the code for the forms section from the [Vue.js: From Beginner to Professional course](https://l.codingexplained.com/course/vuejs?src=github).
+This repository contains the code for the forms section from the [Vue.js: From Beginner to Professional course](https://l.codingexplained.com/r/vuejs-course?src=github).
 
 ## Getting up and Running
 
